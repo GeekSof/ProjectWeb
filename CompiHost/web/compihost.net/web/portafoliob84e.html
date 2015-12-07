@@ -1,0 +1,1121 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from compihost.net/web/portafolio.php?pagina=3 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Dec 2015 15:41:14 GMT -->
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>COMPIHOST - Soluciones de Internet</title>
+
+<link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+
+<link rel="icon" href="img/logocom.gif" type="image/gif" />
+
+<!-- WRAPER INICIO -->
+
+<link rel="stylesheet" href="css/sexylightbox.css" type="text/css" media="all" />
+
+<script src="js/jquery.js"></script>
+
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
+<script type="text/javascript" src="js/sexylightbox.v2.3.jquery.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(
+
+    function(){
+
+           SexyLightbox.initialize({color:'00', 
+
+	                                dir: 'sexyimages'
+
+                                  });
+
+              });
+
+</script>
+
+<script type="text/javascript">
+
+	function meebo(valor){
+
+			window.open('meebo.html','Consultas','width=230,height=520,resizable=NO,scrollbars=NO');			reload();
+
+	}
+
+</script>
+
+<!-- WRAPER FIN -->
+
+
+
+<!----validar formulario------------>
+
+<script language="javascript">
+
+function frm(){
+document.frm.submit()
+}
+
+    function LimpiaEspacios(Obj)
+    {
+    var texto = Obj.value;
+    //limpiamos de espacios en blanco el texto
+    var texto_limpio = texto.replace(/^\s+|\s+$/g,"");
+
+    if (texto_limpio=="")
+    {
+    Obj.value = "";
+    Obj.focus();
+    return true;
+    }
+    else
+    {
+    return false;
+    }
+    }
+
+    function valida_form()
+    {
+
+	
+
+
+
+
+	   if (LimpiaEspacios(document.frm.nombre))
+    {
+    alert("Ingrese su Nombre");
+    return false;
+    }
+	
+
+
+	   if (LimpiaEspacios(document.frm.empresa))
+    {
+    alert("Ingrese el nombre de la Empresa");
+    return false;
+    }
+	
+
+
+
+	   if (LimpiaEspacios(document.frm.mail))
+    {
+    alert("Correo es Obligatoreo");
+    return false;
+    }
+	
+
+
+
+   if (LimpiaEspacios(document.frm.telefono))
+    {
+    alert("Igrese el numero Teléfonico");
+    return false;
+    }
+	
+	
+	   if (LimpiaEspacios(document.frm.asunto))
+    {
+    alert("Escriba el Asunto");
+    return false;
+    }
+	
+	
+	
+    return true;
+    }
+
+
+</script>
+
+
+<!----Scrpi de la ventana popup---------->
+<script src="Rutinas/galeria/js/jquery.min.js" type="text/javascript"></script>
+<script type="text/JavaScript">
+	$(window).resize(function(){
+        	$('.wrapper').css({
+	               position:'fixed',
+        	       left: ($(window).width() - $('.wrapper').outerWidth())/2,
+               		top: ($(window).height() - $('.wrapper').outerHeight())/2
+	          });
+	});
+	// Ejecutamos la función
+	$(window).resize();
+	$(document).ready(function(){
+		$('#sup4').click(function(){
+			$('#capa').fadeIn();
+			$('#express').fadeIn();
+		})
+		$('.cerrar,#capa').click(function(){
+		$('#capa').fadeOut();
+		$('.wrapper').fadeOut();
+	})
+})
+</script>
+<!-- Script del Slider -->
+<link rel='stylesheet' id='style-css'  href='diapo/diapo.css' type='text/css' media='all'> 
+<script type='text/javascript' src='diapo/scripts/jquery.min.js'></script>
+<!--[if !IE]><!--><script type='text/javascript' src='diapo/scripts/jquery.mobile-1.0rc2.customized.min.js'></script><!--<![endif]-->
+<script type='text/javascript' src='diapo/scripts/jquery.easing.1.3.js'></script> 
+<script type='text/javascript' src='diapo/scripts/jquery.hoverIntent.minified.js'></script> 
+<script type='text/javascript' src='diapo/scripts/diapo.js'></script> 
+
+<script>
+$(function(){
+	$('.pix_diapo').diapo();
+});
+</script>
+
+
+
+<!--script src="js/jquery.lint.js" type="text/javascript" charset="utf-8"></script-->
+<link rel="stylesheet" href="Rutinas/galeria/css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+<script src="Rutinas/galeria/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+<!-----aqui termina la sintaxis-------->
+<style type="text/css">
+
+#pretty{
+	color: #666;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:14px;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration:none:
+	}
+	
+	
+
+	
+</style>
+
+
+</head>
+
+
+
+<body>
+
+<!-- Envolve Chat -->
+
+<!--Documentar chat--------<script type="text/javascript">
+
+var envoSn=117836;
+
+var envProtoType = (("https:" == document.location.protocol) ? "http://" : "http://");
+
+document.write(unescape("%3Cscript src='" + envProtoType + "d.envolve.com/env.nocache.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>---------- cerrar chat---->
+
+
+
+<div id="capa"></div>
+<div id="express" class="wrapper">
+	<div class="cerrar">Cerrar(X)</div>
+	<iframe src="http://info361903.supersite.srsportal.com/domain.php" width="99%" height="650px" style="margin-bottom:10px;"></iframe>
+</div>
+
+
+<div id="contenedor_cabecera">
+
+<div id="grande"></div>
+
+  <div id="logo">
+
+  <h1>Brindamos soluciones de internet a su medida, gracias a la experiencia que contamos siendo nuestros servicios creación y optimización de página web, mantenimiento, implementación de  hosting y dominio, sistema atención de clientes, entre otros.</h1>
+
+  </div>
+
+  <div id="slogan">
+
+    <p>Soluciones de Internet</p></div>
+
+  <div id="menu_sup">
+
+  	<div style="width:440px; float:right">
+
+        <div class="link_sup" align="right" style="width:40px"><img src="img/home.png" width="37" height="47"/></div>
+
+        <div class="link_sup" style="padding-top:17px; height:30px; width:48px;"><a href="index-2.html" title="INICIO">Inicio</a></div>
+
+        <div class="link_sup" align="right" style="width:40px"><img src="img/empresa.png" width="37" height="47"/></div>
+
+        <div class="link_sup" style="padding-top:17px; height:30px;"><a href="nosotros.html" title="EMPRESA">Empresa</a></div>
+
+        <div class="link_sup" align="right" style="width:40px"><img src="img/portafolio_icon.png" width="37" height="47"/></div>
+        
+        
+
+
+        <div class="link_sup" style="padding-top:17px; height:30px;"><a href="portafolio.html" title="PORTAFOLIO">Portafolio</a></div>
+
+        <div class="link_sup" align="right" style="width:40px"><img src="img/contacto.png" width="37" height="47"/></div>
+                
+        
+
+        <div class="link_sup" style="padding-top:17px; height:30px;"><a href="contactenos.html" title="CONTÁCTENOS">Contáctenos</a></div>
+
+		<div style="clear:both"></div>        
+
+	</div>
+
+  </div>
+
+  <div style="clear:both"></div>
+
+    <div class="raya"></div>
+
+</div>
+
+
+
+<div id="banner">
+
+<div id="contenedor_banner" style="position:relative; background-color:#FFF">
+
+  <div id="menu2" align="center" style="width:164px; height:369px; padding-left:0px; position: static;">
+
+  <ul>
+
+  <li style="width:164px; margin-right:0px; background-color:#FFF;"><a class="som_men" style="background-image:url(img/menu_amarillo.png); background-repeat:no-repeat; background-color:#FFF;" id="sup1" href="promociones.html" title="PROMOCIONES">Promociones</a></li>
+
+  <li><a class="som_men" id="sup2" href="hosting.html" title="HOSTING">Hosting</a></li>
+  
+  <li><a class="som_men" href="http://info361903.supersite.srsportal.com/domain.php?TB_iframe=true&amp;height=700&amp;width=800" rel="sexylightbox" title="DOMINIO">Dominio</a></li>
+
+  <li><a class="som_men" id="sup3" href="soluciones_web.html" title="SOLUCIONES WEB">Soluciones Web</a></li>
+
+  <li><a class="som_men" id="sup7" href="e_marketing.html" title="E - MARKETING">E - Marketing</a></li>
+
+  <li><a class="som_men" id="sup6" href="soporte.html" title="SOPORTE">Soporte Remoto</a></li>
+
+  <!--<li><a class="som_men" id="sup5" href="sistemas.html" title="SISTEMAS">Sistemas</a></li>   -->
+
+    </ul>
+
+</div>
+<div style="background:url(img/tablet.jpg) no-repeat; width:821px; height:373px; position:absolute; left:182px; top:0px; ">
+
+  <section style="overflow:visible;"> 
+
+    	<div style="position: absolute; width:300px; margin:123px 0 0 -90px; padding:0 20px;top: -100px;left: 90px;"> 
+                <div class="pix_diapo">
+					<div data-thumb="diapo/images/thumbs/up-official-trailer-fake.jpg" title="Haz clic y entérate de nuestras promociones">
+                        <iframe width="734" height="324" src="http://www.youtube.com/embed/c1Z9tTjHIMA?rel=0&amp;modestbranding=1&amp;autoplay=1" data-fake="diapo/images/slides/up-official-trailer-fake.jpg" frameborder="0" allowfullscreen ></iframe>
+                        
+                        <div class="elemHover caption fromLeft elemToHide" style="bottom: 350px; width:auto; -webkit-border-top-right-radius: 6px; -webkit-border-bottom-right-radius: 6px; -moz-border-radius-topright: 6px; -moz-border-radius-bottomright: 6px; border-top-right-radius: 6px; border-bottom-right-radius: 6px; left:0">
+                            You can also display videos, but it requires a "fake image"... read the documentation please
+                        </div>
+                    </div>
+
+                    <div data-thumb="diapo/images/thumbs/megamind1048.jpg">
+                        <a href="web_hosting.html" target="_blank" title="Soluciones Web"><img src="diapo/images/slides/b1.jpg"></a>
+                       <!-- <div class="caption elemHover fromLeft">
+                            This is a simple sliding image with caption. You can have more than one caption and decide the layout of the caption via css.
+                        </div>-->
+                    </div>
+                    
+<!--                    <div data-thumb="diapo/images/thumbs/megamind_07.jpg">
+                        <a href="https://www.facebook.com/COMPIHOST/app_79458893817" target="_blank" title="Haz clic y participa gratis en nuestros Sorteos"><img src="diapo/images/slides/b2.jpg"></a>-->
+<!--                        <div class="caption elemHover fromRight" style="bottom:65px; padding-bottom:5px; color:#ff0; text-transform:uppercase">
+                            Here you can see two captions.
+                        </div>
+                        <div class="caption elemHover fromLeft" style="padding-top:5px;">
+                            The first are loaded immediately before than the second one
+                        </div>-->
+<!--                    </div>-->
+                    
+<!--                    <div data-thumb="diapo/images/thumbs/wall-e.jpg" data-time="7000">
+                        <img src="diapo/images/slides/wall-e.jpg">
+                        <div class="elemHover caption fromLeft" style="bottom:70px; width:auto; -webkit-border-top-right-radius: 6px; -webkit-border-bottom-right-radius: 6px; -moz-border-radius-topright: 6px; -moz-border-radius-bottomright: 6px; border-top-right-radius: 6px; border-bottom-right-radius: 6px;">
+                            You can also get the same effect as the caption with:
+                        </div>
+                        <div class="elemHover button fromTop" data-easing="easeOutExpo" style="left:388px; bottom:78px;">
+                            A button
+                        </div>
+                        <div class="elemHover button button2 fromBottom" data-easing="easeOutExpo" style="left:512px; bottom:78px;">
+                            Or two buttons
+                        </div>
+                        <div class="elemHover fadeIn" style="left:600px; bottom:auto; top:0; padding-top:50px; color:#ff0; font-size:13px; line-height:20px; width:auto; -webkit-border-top-right-radius: 6px; -webkit-border-bottom-right-radius: 6px; -moz-border-radius-topright: 6px; -moz-border-radius-bottomright: 6px; border-top-right-radius: 6px; border-bottom-right-radius: 6px; background:url(diapo/images/demo/arrow_caption.png) no-repeat 230px 30px">
+                            Or any other html element...<br>
+                            and you can decide the transition time of any slide
+                        </div>
+                    </div>-->
+                    
+<!-- Video -->                    
+                    
+                                     
+                    
+                    <div data-thumb="diapo/images/thumbs/ratatouille2.jpg">
+                        <a href="web_hosting.html" target="_blank" title="Soluciones Web"><img src="diapo/images/slides/b3.jpg"></a>
+                    </div>
+                    
+               </div><!-- #pix_diapo -->
+                
+        </div>
+    
+    
+    </section> 
+
+
+</div>
+
+<div style="clear:both"></div>
+
+</div>
+
+</div>
+
+
+<!-- INICIO CUERPO -->
+
+<div id="contenedor_cuerpo">
+
+  <div class="raya"></div>
+
+  <div id="cuerpo">
+
+    <div id="cuerpo_promociones">
+
+   
+
+    
+
+      <div class="caja_promociones">
+
+      <h1 class="promociones">PORTAFOLIO </h1>
+      </div>
+
+      
+
+		<style type="text/css" media="screen">
+			* { margin: 0; padding: 0; }
+			
+	
+			
+	
+			p { font-size: 1.2em; }
+			
+			ul li { display: inline; }
+			
+			.wide {
+				border-bottom: 1px #000 solid;
+				width: 4000px;
+			}
+			
+			.fleft { float: left; margin: 0 20px 0 0; }
+			
+			.cboth { clear: both; }
+			
+			#main {
+				background: #fff;
+				margin: 0 auto;
+				padding: 30px;
+				width: 1000px;
+			}
+		</style>
+  
+
+      <div align="center">
+      
+<!---------gallery 1----------------->      
+<ul class="gallery clearfix">
+</ul>
+<!------aqui termina la sintasis-----> 
+             <br /><br /> 
+      
+        <table width="980" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="940" height="343" align="center" valign="top">
+            
+            <div align="left">
+              	<ul class="gallery clearfix">
+              
+              
+              
+              
+              
+              
+              
+                            <table width="300" border="0" align="left" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="300" height="206" align="center" valign="top">
+                
+                
+                 
+      <div class="portafolio">
+                   
+<a href="plantillas/worldcotton.jpg" rel="prettyPhoto[gallery2]" title="WORLD COTTON&nbsp;<a href=http://www.compina.net/cliente/worldcotton/ id='pretty' target='_blank'>Ir al Sitio Web</a>">
+<img src="plantillas/tmp/tmp_worldcotton.jpg" width="300" height="206" title="WORLD COTTON" /></a>
+                </div>
+                
+                
+                
+                
+                </td>
+            </tr>
+            <tr>
+              <td height="70" align="center" valign="top">
+             <div class="TITULO_portafolio"><strong>WORLD COTTON</strong></div>
+  <a  style=" font-size:16px" class="TITULO_portafolio" href="http://www.compina.net/cliente/worldcotton/" target="_blank">www.compina.net/cliente/worldcotton/</a></td>
+            </tr>
+              </table>
+                            <table width="300" border="0" align="left" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="300" height="206" align="center" valign="top">
+                
+                
+                 
+      <div class="portafolio">
+                   
+<a href="plantillas/lyc-inmobiliaria.jpg" rel="prettyPhoto[gallery2]" title="L&C - INMOBILIARIA&nbsp;<a href=http://lyc-inmobiliaria.pe/ id='pretty' target='_blank'>Ir al Sitio Web</a>">
+<img src="plantillas/tmp/tmp_lyc-inmobiliaria.jpg" width="300" height="206" title="L&C - INMOBILIARIA" /></a>
+                </div>
+                
+                
+                
+                
+                </td>
+            </tr>
+            <tr>
+              <td height="70" align="center" valign="top">
+             <div class="TITULO_portafolio"><strong>L&C - INMOBILIARIA</strong></div>
+  <a  style=" font-size:16px" class="TITULO_portafolio" href="http://lyc-inmobiliaria.pe/" target="_blank">lyc-inmobiliaria.pe</a></td>
+            </tr>
+              </table>
+                            <table width="300" border="0" align="left" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="300" height="206" align="center" valign="top">
+                
+                
+                 
+      <div class="portafolio">
+                   
+<a href="plantillas/reosouthamerica.jpg" rel="prettyPhoto[gallery2]" title="SOUTH AMERICA REGIONAL&nbsp;<a href=http://reosouthamerica.com/ id='pretty' target='_blank'>Ir al Sitio Web</a>">
+<img src="plantillas/tmp/tmp_reosouthamerica.jpg" width="300" height="206" title="SOUTH AMERICA REGIONAL" /></a>
+                </div>
+                
+                
+                
+                
+                </td>
+            </tr>
+            <tr>
+              <td height="70" align="center" valign="top">
+             <div class="TITULO_portafolio"><strong>SOUTH AMERICA REGIONAL</strong></div>
+  <a  style=" font-size:16px" class="TITULO_portafolio" href="http://reosouthamerica.com/" target="_blank">reosouthamerica.com</a></td>
+            </tr>
+              </table>
+                            <table width="300" border="0" align="left" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="300" height="206" align="center" valign="top">
+                
+                
+                 
+      <div class="portafolio">
+                   
+<a href="plantillas/infotec.jpg" rel="prettyPhoto[gallery2]" title="INFOTEC&nbsp;<a href=http://www.infotec.com.pe/ id='pretty' target='_blank'>Ir al Sitio Web</a>">
+<img src="plantillas/tmp/tmp_infotec.jpg" width="300" height="206" title="INFOTEC" /></a>
+                </div>
+                
+                
+                
+                
+                </td>
+            </tr>
+            <tr>
+              <td height="70" align="center" valign="top">
+             <div class="TITULO_portafolio"><strong>INFOTEC</strong></div>
+  <a  style=" font-size:16px" class="TITULO_portafolio" href="http://www.infotec.com.pe/" target="_blank">www.infotec.com.pe</a></td>
+            </tr>
+              </table>
+                            <table width="300" border="0" align="left" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="300" height="206" align="center" valign="top">
+                
+                
+                 
+      <div class="portafolio">
+                   
+<a href="plantillas/compipro.jpg" rel="prettyPhoto[gallery2]" title="COMPIPRO&nbsp;<a href=http://compipro.net/ id='pretty' target='_blank'>Ir al Sitio Web</a>">
+<img src="plantillas/tmp/tmp_compipro.jpg" width="300" height="206" title="COMPIPRO" /></a>
+                </div>
+                
+                
+                
+                
+                </td>
+            </tr>
+            <tr>
+              <td height="70" align="center" valign="top">
+             <div class="TITULO_portafolio"><strong>COMPIPRO</strong></div>
+  <a  style=" font-size:16px" class="TITULO_portafolio" href="http://compipro.net/" target="_blank">compipro.net</a></td>
+            </tr>
+              </table>
+                            <table width="300" border="0" align="left" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="300" height="206" align="center" valign="top">
+                
+                
+                 
+      <div class="portafolio">
+                   
+<a href="plantillas/duetseventos.jpg" rel="prettyPhoto[gallery2]" title="DUETS&nbsp;<a href=http://www.duetseventos.com/ id='pretty' target='_blank'>Ir al Sitio Web</a>">
+<img src="plantillas/tmp/tmp_duetseventos.jpg" width="300" height="206" title="DUETS" /></a>
+                </div>
+                
+                
+                
+                
+                </td>
+            </tr>
+            <tr>
+              <td height="70" align="center" valign="top">
+             <div class="TITULO_portafolio"><strong>DUETS</strong></div>
+  <a  style=" font-size:16px" class="TITULO_portafolio" href="http://www.duetseventos.com/" target="_blank">www.duetseventos.com</a></td>
+            </tr>
+              </table>
+                            <table width="300" border="0" align="left" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="300" height="206" align="center" valign="top">
+                
+                
+                 
+      <div class="portafolio">
+                   
+<a href="plantillas/calmet.jpg" rel="prettyPhoto[gallery2]" title="CALMET&nbsp;<a href=http://www.edificacionescalmet.com/ id='pretty' target='_blank'>Ir al Sitio Web</a>">
+<img src="plantillas/tmp/tmp_calmet.jpg" width="300" height="206" title="CALMET" /></a>
+                </div>
+                
+                
+                
+                
+                </td>
+            </tr>
+            <tr>
+              <td height="70" align="center" valign="top">
+             <div class="TITULO_portafolio"><strong>CALMET</strong></div>
+  <a  style=" font-size:16px" class="TITULO_portafolio" href="http://www.edificacionescalmet.com/" target="_blank">www.edificacionescalmet.com</a></td>
+            </tr>
+              </table>
+                            <table width="300" border="0" align="left" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="300" height="206" align="center" valign="top">
+                
+                
+                 
+      <div class="portafolio">
+                   
+<a href="plantillas/nascar.jpg" rel="prettyPhoto[gallery2]" title="INDUSTRIA TEXTIL NASCA S.R.L&nbsp;<a href=http://www.compina.net/cliente/textilnazca/ id='pretty' target='_blank'>Ir al Sitio Web</a>">
+<img src="plantillas/tmp/tmp_nascar.jpg" width="300" height="206" title="INDUSTRIA TEXTIL NASCA S.R.L" /></a>
+                </div>
+                
+                
+                
+                
+                </td>
+            </tr>
+            <tr>
+              <td height="70" align="center" valign="top">
+             <div class="TITULO_portafolio"><strong>INDUSTRIA TEXTIL NASCA S.R.L</strong></div>
+  <a  style=" font-size:16px" class="TITULO_portafolio" href="http://www.compina.net/cliente/textilnazca/" target="_blank">www.compina.net/cliente/textilnazca/</a></td>
+            </tr>
+              </table>
+                            <table width="300" border="0" align="left" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="300" height="206" align="center" valign="top">
+                
+                
+                 
+      <div class="portafolio">
+                   
+<a href="plantillas/gestion.jpg" rel="prettyPhoto[gallery2]" title="GESTIÓN - FORMACIÓN PROFESIONAL INTEGRAL&nbsp;<a href=http://gestion20.com/ id='pretty' target='_blank'>Ir al Sitio Web</a>">
+<img src="plantillas/tmp/tmp_gestion.jpg" width="300" height="206" title="GESTIÓN - FORMACIÓN PROFESIONAL INTEGRAL" /></a>
+                </div>
+                
+                
+                
+                
+                </td>
+            </tr>
+            <tr>
+              <td height="70" align="center" valign="top">
+             <div class="TITULO_portafolio"><strong>GESTIÓN - FORMACIÓN PROFESIONAL INTEGRAL</strong></div>
+  <a  style=" font-size:16px" class="TITULO_portafolio" href="http://gestion20.com/" target="_blank">gestion20.com</a></td>
+            </tr>
+              </table>
+                              </ul>
+              
+   
+              
+             
+
+
+
+
+<!-------Script de la galeria del popup------------>
+
+	
+			  <script type="text/javascript" charset="utf-8">
+			$(document).ready(function(){
+				$("area[rel^='prettyPhoto']").prettyPhoto();
+				
+				$(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true});
+				$(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
+		
+				$("#custom_content a[rel^='prettyPhoto']:first").prettyPhoto({
+					custom_markup: '<div id="map_canvas" style="width:260px; height:265px"></div>',
+					changepicturecallback: function(){ initialize(); }
+				});
+
+				$("#custom_content a[rel^='prettyPhoto']:last").prettyPhoto({
+					custom_markup: '<div id="bsap_1259344" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div><div id="bsap_1237859" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6" style="height:260px"></div><div id="bsap_1251710" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div>',
+					changepicturecallback: function(){ _bsap.exec(); }
+				});
+			});
+			  </script>
+              
+
+<!------Aqui termina el codigo---------->
+              
+              
+              
+              
+             
+	
+
+              
+              
+            </div>
+            
+            
+            </td>
+          </tr>
+          </table>
+          
+       <style type="text/css">
+	  
+	   .pagina{
+		   font-family:Verdana, Geneva, sans-serif;
+		   font-size:21px;
+		   text-decoration:none;
+		   
+		   }
+	  
+ .pagina a:link{
+	 color:#aeaeac;
+	 text-decoration:none;
+	 
+	 }
+	 
+	 
+	  .pagina a:visited {
+	 color:#aeaeac;
+	 text-decoration:none;
+	 
+	 }
+	 
+	  .pagina a:hover{
+	 color: #5a5a5a;
+	 text-decoration:none;
+	 
+	 }
+	 
+	  .pagina a:active{
+	 color: #5a5a5a;
+	 text-decoration:none;
+	 
+	 }
+	 
+	   </style>   
+          
+        <div class="pagina">
+        <a href='portafolio90ff.html?pagina=2'>Anterior <</a> <a href='portafolio3977.html?pagina=1'>1</a> <a href='portafolio90ff.html?pagina=2'>2</a> 3&nbsp;<a href='portafolio702d.html?pagina=4'>4</a>  <a href='portafolio702d.html?pagina=4'>> Siguiente</a></div>
+
+  
+
+      </div>
+
+      <!-------<div class="caja_6" style="margin-right:0px;">
+
+      <h1 class="fondo6">WEB MYPE - 2</h1>
+
+      <ul class="cablis_1">
+
+        <li>Página web con diseño plantilla</li>
+
+        <li>Página web máximo 5 pantallas</li>
+
+------------------------------------------------------------------
+
+<li>100 mb de hosting y Dominio</li>
+
+<li>5 cuentas de correo corporativo</li>
+
+<li>1 asistencia remota (30 minutos)</li>
+
+<li>Contará con estadísticas</li>
+
+------------------------------------------------------------------
+
+      </ul>
+
+      <center>
+
+        <center>
+
+          Único Pago<br/>
+
+          <span class="costo1"> S/.
+
+            1000
+            </span> <br/>
+
+          <span style="color:#Bf0602;font-weight:bold;font-size:12px;">Precio Incluye IGV</span> </span><br/>
+
+          ------------------------------------------------------------------
+
+        </center>
+
+        <center>
+
+          10 días laborales
+
+        </center>
+
+      </center>
+
+
+<div align="center">
+          <table height="0" width="250" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="122" height="10"><div class="btm_buton"><a href="pyme_02.php?TB_iframe=true&amp;height=500&amp;width=545" rel="sexylightbox" class="l_1"> más información</a></div></td>
+              <td width="10" height="10" align="center" valign="middle">l</td>
+              <td width="122" height="10"><div class="link1"><div class="btm_buton"><a href="cotizar_codigo.php?idcodigo=EMPRENDEDORTB_iframe=true&height=480&width=545" rel="sexylightbox" class="l_1"> ordenar pedido</a></div>
+              </div></td>
+            </tr>
+          </table>
+    
+        </div>
+
+      </div>-------------->
+
+      <!-----<div class="caja_6">
+
+      <h1 class="fondo6">WEB STANDARD - 1</h1>
+
+      <ul class="cablis_1">
+
+        <li>Página web con diseño plantilla</li>
+
+        <li>Página web máximo 8 pantallas</li>
+
+------------------------------------------------------------------
+
+<li>500 mb de hosting y Dominio</li>
+
+<li>10 cuentas de correo corporativo</li>
+
+<li>1 asistencia remota (30 minutos)</li>
+
+<li>Contará con estadísticas</li>
+
+------------------------------------------------------------------
+
+      </ul>
+
+      <center>
+
+        <center>
+
+          Único Pago<br/>
+
+          <span class="costo1"> S/.
+
+            1300
+            </span> <br/>
+
+          <span style="color:#Bf0602;font-weight:bold;font-size:12px;">Precio Incluye IGV</span> </span><br/>
+
+          ------------------------------------------------------------------
+
+        </center>
+
+        <center>
+
+          15 días laborales
+
+        </center>
+
+      </center>
+
+      
+      
+      <div align="center">
+          <table height="0" width="250" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="122" height="10"><div class="btm_buton"><a href="pyme_03.php?TB_iframe=true&amp;height=500&amp;width=545" rel="sexylightbox" class="l_1"> más información</a></div></td>
+              <td width="10" height="10" align="center" valign="middle">l</td>
+              <td width="122" height="10"><div class="link1"><div class="btm_buton"><a href="cotizar_codigo.php?idcodigo=EMPRENDEDORTB_iframe=true&height=480&width=545" rel="sexylightbox" class="l_1"> ordenar pedido</a></div>
+              </div></td>
+            </tr>
+          </table>
+    
+        </div>
+
+      </div>------------->
+
+    <!-------<div class="caja_6" style="margin-right:0px;">
+
+      <h1 class="fondo6">WEB STANDARD - 2</h1>
+
+      <ul class="cablis_1">
+
+        <li>Página web con diseño plantilla</li>
+
+        <li>Página web máximo 10 pantallas</li>
+
+        <li>Contará con un Administrador de Contenidos</li>
+
+------------------------------------------------------------------
+
+<li>1000 mb de hosting y Dominio</li>
+
+<li>20 cuentas de correo corporativo</li>
+
+<li>1 asistencia remota (30 minutos)</li>
+
+<li>Contará con estadísticas</li>
+
+------------------------------------------------------------------
+
+      </ul>
+
+        <center>Único Pago<br/>
+
+          <span class="costo1"> S/.
+
+            2500
+            </span> <br/>
+
+          <span style="color:#Bf0602;font-weight:bold;font-size:12px;">Precio Incluye IGV</span> </span><br/>
+
+          ------------------------------------------------------------------<br/>
+
+          22 días laborales
+
+      </center>
+
+
+
+<div align="center">
+          <table height="0" width="250" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="122" height="10"><div class="btm_buton"><a href="pyme_04.php?TB_iframe=true&amp;height=500&amp;width=545" rel="sexylightbox" class="l_1"> más información</a></div></td>
+              <td width="10" height="10" align="center" valign="middle">l</td>
+              <td width="122" height="10"><div class="link1"><div class="btm_buton"><a href="cotizar_codigo.php?idcodigo=EMPRENDEDORTB_iframe=true&height=480&width=545" rel="sexylightbox" class="l_1"> ordenar pedido</a></div>
+              </div></td>
+            </tr>
+          </table>
+    
+        </div>
+      </div>------------></div>
+
+    
+
+    
+
+    <!-- INICIO OFERTAS -->
+
+    
+
+    <!-- FIN OFERTAS --> 
+
+    <div style="clear:both"></div>
+
+  </div>
+
+    <div class="raya"></div>
+
+</div>
+
+<!-- FIN CUERPO -->
+
+
+
+
+
+<div id="contenedor_pie">
+
+
+
+<div id="pie">
+
+  <div id="logo_pie">
+
+  <h1>COMPIHOST.NET, empresa peruana con mas de 6 años de experiencia y brindando el servicio de alojamiento web y registro de dominios.</h1>
+
+  </div>
+
+  <div id="slogan_pie">
+
+  <ul>
+
+    <li><a href="soporte-2.html" title="SOPORTE">SOPORTE</a></li>
+
+    <li><a href="nuestra_tecnologia.html" title="NUESTRA TECNOLOGÍA">NUESTRA TECNOLOGÍA</a></li>
+
+    <li><a href="preguntas_frecuentes.html" title="PREGUNTAS FRECUENTES">PREGUNTAS FRECUENTES</a></li>
+
+    <li><a href="politicas_servicio.html" title="POLÍTICAS DEL SERVICIO">POLÍTICAS DEL SERVICIO</a></li>
+
+    <li><a href="terminos_condiciones.html" title="TERMINOS Y CONDICIONES">TERMINOS Y CONDICIONES</a></li>
+
+  </ul>
+
+  </div>
+
+  <div id="menu_pie">
+
+  <p><strong>Teléfono: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email:</strong></p>
+
+  <p>(511) 796 2663 - (511) 780 4649 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ventas@compihost.net</p>
+
+  </div>
+
+  <div style="clear:both"></div>
+<script language="javascript">
+function cerrar_chat(){ //cerrar chat
+document.getElementById("consulta").style.visibility="hidden";	
+document.getElementById("pointer").style.visibility="hidden";
+document.getElementById("ventana").style.paddingTop="6px";
+document.getElementById("ventana").innerHTML='<img src="http://compihost.net/soluciones/chat_compihost/images/minimizar.png" onclick="abrir_chat();" style="cursor:pointer;"  border="0"/>';	
+}
+
+
+
+function abrir_chat(){ //abrir chat
+document.getElementById("consulta").style.visibility="visible";	
+document.getElementById("pointer").style.visibility="visible";
+document.getElementById("ventana").innerHTML='<img src="http://compihost.net/soluciones/chat_compihost/images/cerrar.png" border="0" style="cursor:pointer;" onclick="cerrar_chat();" />';
+document.getElementById("ventana").style.paddingTop="1px";	
+	
+	
+	} 
+
+</script>
+
+
+
+ 
+
+<div style="position:fixed; bottom:38px; right:5px; z-index:3000; height:62px;">
+<!-- mibew button --><!-- / mibew button -->
+<table width="231" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="231" height="51" align="center" valign="top"><a href="../soluciones/chat_compihost/client7038.html?locale=en" target="_blank" onclick="if(navigator.userAgent.toLowerCase().indexOf('opera') != -1 &amp;&amp; window.event.preventDefault) window.event.preventDefault();this.newWindow = window.open('../soluciones/chat_compihost/client6806.html?locale=en&amp;url='+escape(document.location.href)+'&amp;referrer='+escape(document.referrer), 'webim', 'toolbar=0,scrollbars=0,location=0,status=1,menubar=0,width=640,height=480,resizable=1');this.newWindow.focus();this.newWindow.opener=window;return false;"><img src="../soluciones/chat_compihost/images/boton-consulta.png"  name="consulta" id="consulta" border="0"/></a></td>
+  </tr>
+  <tr>
+    <td height="19" align="center" valign="top">
+    
+    <table width="150" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="19" height="24" align="center" valign="top">
+        <div id="ventana" style="height:14px;" align="center">
+      <img src="../soluciones/chat_compihost/images/cerrar.png" border="0" style="cursor:pointer;" onclick="cerrar_chat();" />
+        </div>
+        </td>
+        <td width="131" height="19" align="left" valign="top"><div id="click">
+        <a href="../soluciones/chat_compihost/client7038.html?locale=en" target="_blank" onclick="if(navigator.userAgent.toLowerCase().indexOf('opera') != -1 &amp;&amp; window.event.preventDefault) window.event.preventDefault();this.newWindow = window.open('../soluciones/chat_compihost/client6806.html?locale=en&amp;url='+escape(document.location.href)+'&amp;referrer='+escape(document.referrer), 'webim', 'toolbar=0,scrollbars=0,location=0,status=1,menubar=0,width=640,height=480,resizable=1');this.newWindow.focus();this.newWindow.opener=window;return false;">
+        <img src="../soluciones/chat_compihost/images/haz-click.png" width="130" height="19" border="0"/></a></div></td>
+      </tr>
+    </table>
+
+    
+    
+    </td>
+  </tr>
+</table>
+<img src="../soluciones/chat_compihost/images/pointer.png" width="42" height="54" border="0" style="position: absolute; left: 199px; top: 46px;" id="pointer"/></div>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+</body>
+
+
+
+
+<!-- Mirrored from compihost.net/web/portafolio.php?pagina=3 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Dec 2015 15:43:29 GMT -->
+</html>
+
+
+ <!-- Begin Attracta Include 2013-06-02 15:47 -->
+<script type='text/javascript'> 
+function attracta_loadjs(url) {
+   (function() {
+       var s = document.createElement('script');
+       s.type = 'text/javascript';
+       s.async = true;
+       s.src = url;
+       var x = document.getElementsByTagName('script')[0];
+       x.parentNode.insertBefore(s, x);
+   })();
+}
+function attracta_shouldrun() {
+   var v = ["/admin/","../adm/index.html","../wp-admin/index.html","/administrator/"];
+   for (x in v) if(window.location.pathname.indexOf(v[x]) == 0) return false;
+   return true;
+}
+function attracta_window_width() {
+   if (document.body && document.body.offsetWidth) return document.body.offsetWidth;
+   if (document.compatMode=='CSS1Compat' && document.documentElement && document.documentElement.offsetWidth ) return document.documentElement.offsetWidth;
+   if (window.innerWidth) return window.innerWidth;
+   return 0;
+}
+function attracta_window_height() {
+   if (document.body && document.body.offsetHeight) return document.body.offsetHeight;
+   if (document.compatMode=='CSS1Compat' && document.documentElement && document.documentElement.offsetHeight ) return document.documentElement.offsetHeight;
+   if (window.innerHeight) return window.innerHeight;
+   return 0;
+}
+</script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17302325-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<!-- End Attracta Include 2013-06-02 15:47 -->
+

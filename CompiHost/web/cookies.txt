@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+compihost.net	TRUE	/soluciones/chat_compihost/	FALSE	1999999999	webim_locale	en
+compihost.net	TRUE	/	FALSE	1999999999	PHPSESSID	b4403ad55e575553ebc1dd1df71cc38b
+compihost.net	TRUE	/	FALSE	1999999999	WEBIM_UserID	1449502521.1541814199
+

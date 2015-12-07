@@ -1,0 +1,926 @@
+@import url("diagramacion.css");
+
+
+
+body{
+
+	padding:0px;
+
+	border:0px;
+
+	margin:0px;
+
+	/*	color:#A8CF3E;*/
+
+	background-color:#FCFCFC;
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	}
+
+	
+
+p{
+
+	padding:0px;
+
+	border:0px;
+
+	margin:0px;
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-size:14px;
+
+	text-align: center;
+
+	}
+
+	
+
+img{
+
+	border:0px;
+
+	}
+
+
+
+/* INICIO CAJAS */
+
+
+
+div.caja_1{
+
+	width:788px;
+
+	border:#C00 1px solid;
+
+	margin:0px 0px 10px 0px;
+
+	color: #666;
+
+ 	-ms-border-radius-bottomleft: 10px; 
+
+    -ms-border-radius-bottomright: 10px;
+
+	border-bottom-left-radius:10px;
+
+	border-bottom-right-radius:10px;
+
+	-moz-border-radius: 0 0 10px 10px;
+
+  	-khtml-border-radius-bottomleft:10px;
+
+    -khtml-border-radius-bottomright:10px;
+
+	-webkit-border-bottom-right-radius: 10px;
+
+	-webkit-border-bottom-left-radius: 10px;
+
+	}
+
+	
+
+div h1.fondo1{
+
+	background:url(../img/caja.png);
+
+	width:778px;
+
+	height:24px;
+
+	padding:5px 0px 0px 10px;
+
+	border:0px;
+
+	margin:0px 0px 0px 0px;
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-size:15px;
+
+	color:#FFF;
+
+	}
+
+	
+
+div p.c1{
+
+	padding:15px 10px;
+
+	border:0px;
+
+	margin:0px 0px 0px 0px;
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-size:14px;
+
+	color:#666;
+
+	text-align:justify;
+
+	line-height:20px;
+
+	}
+
+	
+
+div.caja_blanca{
+
+	float:left;
+
+	width:260px;
+
+	padding:0px;
+
+	margin:0px 5px 10px 0px;
+
+	}
+
+	
+
+div.caja_2{
+
+	float:left;
+
+	width:258px;
+
+	border:#C00 1px solid;
+
+	padding:0px;
+
+	margin:0px 5px 10px 0px;
+
+	-ms-border-radius-bottomleft: 10px; 
+
+    -ms-border-radius-bottomright: 10px;
+
+	border-bottom-left-radius:10px;
+
+	border-bottom-right-radius:10px;
+
+	-moz-border-radius: 0 0 10px 10px;
+
+  	-khtml-border-radius-bottomleft:10px;
+
+    -khtml-border-radius-bottomright:10px;
+
+	-webkit-border-bottom-right-radius: 10px;
+
+	-webkit-border-bottom-left-radius: 10px;
+
+	}
+
+	
+
+div.caja_6{
+
+	float:left;
+
+
+	height:510px;
+	width:388px;
+
+
+	border:#C00 1px solid;
+
+	padding:0px;
+	
+
+	margin:0px 10px 10px 0px;
+
+	border-radius: 0 0 10px 10px;
+
+ 	-ms-border-radius-bottomleft: 10px; 
+
+    -ms-border-radius-bottomright: 10px;
+
+	border-bottom-left-radius:10px;
+
+	border-bottom-right-radius:10px;
+
+	-moz-border-radius: 0 0 10px 10px;
+
+  	-khtml-border-radius-bottomleft:10px;
+
+    -khtml-border-radius-bottomright:10px;
+
+	-webkit-border-bottom-right-radius: 10px;
+
+	-webkit-border-bottom-left-radius: 10px;
+
+/*	border-bottom-left-radius:10px;
+
+	webkit-border-bottom-left-radius:10px;
+
+	webkit-border-bottom-right-radius:10px;
+
+	moz-border-radius-top:10px;*/
+
+	background-color: #FFF;
+	position:relative;
+
+	}
+
+	
+	
+	
+	
+	
+	
+	
+div.caja_7{
+
+	float:left;
+	height:320px;
+	width:388px;
+
+	border:#C00 1px solid;
+	padding:0px;
+	margin:0px 10px 10px 0px;
+	border-radius: 0 0 10px 10px;
+ 	-ms-border-radius-bottomleft: 10px; 
+    -ms-border-radius-bottomright: 10px;
+	
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+
+	-moz-border-radius: 0 0 10px 10px;
+
+  	-khtml-border-radius-bottomleft:10px;
+
+    -khtml-border-radius-bottomright:10px;
+
+	-webkit-border-bottom-right-radius: 10px;
+
+	-webkit-border-bottom-left-radius: 10px;
+
+
+	background-color: #FFF;
+	position:relative;
+
+	}
+	
+	
+	
+	
+	
+	
+	
+
+div.caja_500{
+
+	background:url(../img/caja_500.png);
+
+	width:790px;
+
+	height:40px;
+
+	padding:14px 0px 0px 0px;
+
+	border:0px;
+
+	margin:0px 0px 10px 0px;
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-size:20px;
+
+	font-weight:bold;
+
+	color:#BF0601;
+
+	text-align:center;
+
+	}	
+
+	
+
+div h1.fondo2{
+
+	background:url(../img/caja.png);
+
+	width:258px;
+
+	height:24px;
+
+	padding:5px 0px 0px 0px;
+
+	border:0px;
+
+	margin:0px 0px 0px 0px;
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-size:15px;
+
+	color:#FFF;
+
+	text-align:center;
+
+	}
+
+	
+
+div h1.fondo6{
+
+	background:url(../img/caja.png);
+
+	width:388px;
+
+	height:24px;
+
+	padding:5px 0px 0px 0px;
+
+	border:0px;
+
+	margin:0px 0px 0px 0px;
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-size:15px;
+
+	color:#FFF;
+
+	text-align:center;
+
+	}
+
+	
+
+div p.caja_66{
+
+	color:#666;
+
+	font-size:14px;
+
+	font-weight:bold;
+
+	padding:10px 0px 0px 10px;
+	
+
+	}
+
+	
+
+div p.costo1{
+
+	padding:0px 0px 20px 0px;
+
+	border:0px;
+
+	margin:0px 0px 0px 0px;
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-size:20px;
+
+	font-weight:bold;
+
+	color:#Bf0602;
+
+	text-align:center;
+
+	}
+
+	
+
+div p.link1{
+
+	padding:0px 0px 10px 0px;
+
+	border:0px;
+
+	margin:0px 0px 0px 0px;
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-size:12px;
+
+	font-weight:bold;
+
+	color:#000;
+
+	text-align:center;
+
+	}
+
+	
+
+a.l_1{
+
+	color:#000;
+
+	text-decoration:none;
+
+	}
+
+	
+
+a:hover.l_1{
+
+	color:#000;
+
+	text-decoration:underline;
+
+	}	
+
+	
+
+div ul.cablis_1 {
+
+	padding:10px 0px 10px 0px;
+
+	border:0px;
+
+	margin:0px 0px 0px 20px;
+
+	font-size:14px;
+
+	color: #666;
+line-height: 1.9;
+margin-top:6px
+	}
+	
+	
+	#check{
+		margin-top:6px;
+		
+	
+		}
+
+div li.lis_1{
+
+	padding:5px 0px 5px 0px;
+
+	border:0px;
+
+	margin:0px 0px 0px 0px;
+
+	}
+
+	
+
+div.img_1{
+
+	text-align:center;
+
+	border:#EEE 2px solid;
+
+	margin:0px 0px 10px 0px;
+
+	padding:4px;
+
+ 	-ms-border-radius: 8px; 
+
+    -ms-border-radius: 8px;
+
+	border-radius:8px;
+
+	border-radius:8px;
+
+	-moz-border-radius:8px;
+
+    -khtml-border-radius:8px;
+
+	-webkit-border-bottom:8px;
+
+	-webkit-border-bottom:8px;
+
+	}
+
+
+
+/* FIN CAJAS */
+
+
+
+/* INICIO CAJA 100 */
+
+div.col_100{
+
+	float:left;
+
+	width:256px;
+
+	margin:0px 11px 0px 0px;
+
+	}
+
+
+
+div.caja_100{
+
+	width:232px;
+
+	padding:10px 10px 10px 10px;
+
+	border:#EEE 2px solid;
+
+	margin:0px 0px 15px 0px;
+
+	-ms-border-radius:8px; 
+
+    -ms-border-radius:8px;
+
+	border-radius:8px;
+
+	-moz-border-radius:8px;
+
+  	-khtml-border-radius:8px;
+
+    -khtml-border-radius:8px;
+
+	-webkit-border-radius:8px;
+
+	-webkit-border-radius:8px;
+
+	}
+
+	
+
+p.caja_101{
+
+	font-size:15px;
+
+	font-weight:bold;
+
+	color:#BF0601;
+
+	text-align:center;
+
+	padding:0px 0px 10px 0px;
+
+	}
+
+	
+
+p.caja_102{
+
+	font-size:13px;
+
+	color:#666;
+
+	text-align:center;
+
+	padding:0px 0px 0px 0px;
+
+	}
+
+
+
+/* FIN CAJAS */
+
+
+
+/* INICIO CAJA 200*/
+
+
+
+div.caja_200{
+
+	width:788px;
+
+	border:#EEE 1px solid;
+
+	padding:0px;
+
+	margin:0px 0px 50px 0px;
+
+	color: #666;
+
+	background-color: #FFF;
+
+	-ms-border-radius-bottomleft: 10px; 
+
+    -ms-border-radius-bottomright: 10px;
+
+	border-bottom-left-radius:10px;
+
+	border-bottom-right-radius:10px;
+
+	-moz-border-radius: 0 0 10px 10px;
+
+  	-khtml-border-radius-bottomleft:10px;
+
+    -khtml-border-radius-bottomright:10px;
+
+	-webkit-border-bottom-right-radius: 10px;
+
+	-webkit-border-bottom-left-radius: 10px;
+
+	}
+
+
+
+.caja_titulo{
+	font-size: 24px;
+	padding: 0px;
+	margin: 0px 0px 50px 0px;
+	color: #666;
+	-ms-border-radius-bottomleft: 10px;
+
+	}
+	
+
+div h1.fondo200{
+
+	background:url(../img/caja_200.png);
+
+	width:778px;
+
+	height:24px;
+
+	padding:5px 0px 0px 10px;
+
+	border:0px;
+
+	margin:0px 0px 0px 0px;
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-size:15px;
+
+	color:#BF0601;
+
+	text-align:center;
+
+	}
+
+
+
+/* FIN CAJA 200*/
+
+
+
+/* INICIO OFERTAS */
+
+
+
+div.oferta2{
+
+	width:176px;
+
+	border:#EEE 2px solid;
+
+	padding:5px;
+
+	margin:0px 0px 7px 0px;
+
+	-ms-border-radius:8px;
+
+	-ms-border-radius:8px;
+
+	border-radius:8px;
+
+	-moz-border-radius:8px;
+
+	-khtml-border-radius:8px;
+
+	-khtml-border-radius:8px;
+
+	-webkit-border-radius:8px;
+
+	-webkit-border-radius:8px;
+
+	color: #C00;
+
+	}
+
+	
+
+div.oferta2 p.clase_1{
+
+	font-size:15px;
+
+	font-weight:bold;
+
+	color:#000;
+
+	text-align:center;
+
+	}
+
+	
+
+div.oferta2 p.clase_2{
+
+	font-size:30px;
+
+	font-weight:bold;
+
+	padding:0px 0px 15px 0px;
+
+	color:#C00;
+
+	text-align:center;
+
+	}
+
+	
+
+div.oferta2 p.clase_3{
+
+	font-size:12px;
+
+	font-weight:bold;
+
+	color:#000;
+
+	text-align:right;
+
+	padding:0px 0px 5px 0px;
+
+	}
+
+	
+
+div.oferta3{
+
+	background:url(../img/oferta3.png);
+
+	width:176px;
+
+	padding:12px;
+
+	margin:0px 0px 7px 0px;
+
+	-ms-border-radius:8px; 
+
+    -ms-border-radius:8px;
+
+	border-radius:8px;
+
+	-moz-border-radius:8px;
+
+  	-khtml-border-radius:8px;
+
+    -khtml-border-radius:8px;
+
+	-webkit-border-radius:8px;
+
+	-webkit-border-radius:8px;
+
+	}
+
+	
+
+div.oferta3 p.clase_4{
+
+	font-size:30px;
+
+	font-weight:bold;
+
+	padding:0px 0px 15px 0px;
+
+	color:#FFF;
+
+	text-align:center;
+
+	}
+
+	
+
+	
+
+a.wraper{
+
+
+
+	color:#FFF;
+
+	text-decoration:none
+
+	}
+
+	
+
+a:hover.wraper{
+
+
+
+	color:#FFF;
+
+	text-decoration:none
+
+	}
+
+	
+
+div.oferta3 p.clase_5{
+
+	font-size:12px;
+
+	font-weight:bold;
+
+	color:#FFF;
+
+	text-align:right;
+
+	padding:0px 0px 5px 0px;
+
+	}
+
+	
+
+p.clase_6{
+
+	font-size:15px;
+
+	font-weight:bold;
+
+	color:#FFF;
+
+	text-align:center;
+
+	}
+
+	
+
+.mouse{
+
+	cursor:pointer;
+
+	-ms-border-radius:8px;
+
+	-ms-border-radius:8px;
+
+	border-radius:8px;
+
+	-moz-border-radius:8px;
+
+	-khtml-border-radius:8px;
+
+	-khtml-border-radius:8px;
+
+	-webkit-border-radius:8px;
+
+	-webkit-border-radius:8px;
+
+	background-color: #FFF;
+
+	
+
+	}
+
+
+
+h1.promociones{
+	
+	background:url(../img/caja.png);
+
+	width:990px;
+
+	height:24px;
+
+	padding:5px 0px 0px 10px;
+
+	border:0px;
+
+	margin:0px 0px 0px 0px;
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	font-size:15px;
+
+	color:#FFF;
+	
+	
+	}
+	
+	
+	
+	
+	
+	div.promociones{
+
+	width:980px;
+
+	border:#C00 1px solid;
+
+	margin:0px 0px 10px 0px;
+
+	color: #666;
+
+ 	-ms-border-radius-bottomleft: 10px; 
+
+    -ms-border-radius-bottomright: 10px;
+
+	border-bottom-left-radius:10px;
+
+	border-bottom-right-radius:10px;
+
+	-moz-border-radius: 0 0 10px 10px;
+
+  	-khtml-border-radius-bottomleft:10px;
+
+    -khtml-border-radius-bottomright:10px;
+
+	-webkit-border-bottom-right-radius: 10px;
+
+	-webkit-border-bottom-left-radius: 10px;
+
+	}

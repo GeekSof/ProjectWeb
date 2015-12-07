@@ -1,0 +1,139 @@
+
+	
+.mybutton {
+padding:5px; background:#C00; color:#FFF; font-weight:bold;      text-align:center; 
+}
+
+
+ 
+
+
+.verde{
+    color:#00CC00;
+    font-family:Arial;
+	font-size:13px;
+}
+
+.rojo{
+    color:#FF0000;
+    font-family:Arial;
+	font-size:13px;
+}
+
+.blanco{
+    color:#FFFFFF;
+    font-family:Arial;
+	font-size:13px;
+}
+
+
+
+.verdee{
+    color:#00CC00;
+
+}
+
+.rojoo{
+    color:#FF0000;
+
+}
+
+.blancoo{
+    color:#FFFFFF;
+}
+
+.azul{
+	color:#0066FF;
+	text-decoration:none;
+	
+}
+
+
+.dorado_c {color:#C00;} 
+.dorado_o {  color:#C00;}
+
+.columna_borde{
+	border:1px #C00  solid;
+
+}
+
+
+
+
+.myselect{
+/*border:2px solid #0F395B;*/
+background: transparent;
+}
+
+.myoption{
+/*background:transparent;
+color: #C00;
+font-size:16px;
+font-weight:bold;*/
+}
+
+
+.cheack-radio{
+	background:transparent;
+	border:1px solid #C00
+}
+
+
+
+.linea{
+
+/*background:url(../img/linea.jpg)  center repeat-x;*/
+border-bottom:#C00   1px solid;
+height:1px;
+
+}
+
+
+.borde{
+
+/*background:url(../img/linea.jpg)  center repeat-x;*/
+border-bottom:#C00   1px solid;
+ 
+
+}
+
+
+
+		.input_por {
+	width: 90%;
+
+	
+}
+
+.font_arial_20{
+font-family:Arial;
+font-size:20px;
+}
+
+
+
+.table { font-family:Arial;  color:#55555;  font-size:12px;}
+.table    tr  th{font-family:Arial; font-size:16px; font-weight:bold; padding:3px;  color:#FFF; background:url(../img/caja.png);}
+.table    tr  td {        }
+
+
+
+
+
+input[type=text] , select   {
+	color:#C00;
+	border:#C00   1px solid;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
