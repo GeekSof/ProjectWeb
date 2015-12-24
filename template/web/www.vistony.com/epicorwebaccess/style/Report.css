@@ -1,0 +1,68 @@
+﻿BODY
+{
+    font: 8.25pt Microsoft Sans Serif;
+    margin: 0 0 0 0;
+    background-color:#DFE8F6; 
+}
+.leftPanelContainer
+{
+    overflow-x:hidden;
+    overflow-y:auto;
+    background-color:#ffffff;
+    border:1px solid #99BBE8;
+    border-top:1px solid #E6EEF7;
+    padding:3px 3px 3px 3px;
+}
+.reportContainer
+{
+    overflow:hidden;
+    background-color:#ffffff;
+    border:1px solid #99BBE8;
+    border-top:1px solid #E6EEF7;
+}
+.reportContainer DIV
+{
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+LABEL
+{
+    font-family:Verdana;
+    font-size:8pt;
+}
+.reportGrid
+{
+	width:100%;
+}
+.reportGridCell
+{
+    vertical-align:top;
+    border-bottom: 1px solid #B9D7FF;
+}
+.reportGridRow
+{
+    padding-top:5px;
+    padding-bottom:5px;
+}
+.reportHeader
+{
+    background-color:#F1F2F4;
+    border-bottom:1px solid #D0D0D0;
+}
+.reportHeader IMG
+{
+	margin:0px 3px 0px 3px;
+	cursor:pointer;
+}
+.reportInnerTable LABEL
+{
+    cursor:pointer;
+}
+.gray
+{
+    color:#808080;
+}
+.reportCheckbox
+{
+    width:28px;
+}

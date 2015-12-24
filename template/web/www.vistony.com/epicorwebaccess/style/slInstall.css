@@ -1,0 +1,101 @@
+.slInstall
+{
+	text-align:center;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:11px;
+	line-height:18px;
+	color:#444;
+	position:relative;
+	top:150%;
+}
+.slInstall p
+{
+	margin-top:10px;
+}
+.slInstall .slDivider
+{
+	margin-top:12px;
+	margin-bottom:10px;
+}
+.slInstall li
+{
+	list-style-type:square;
+	margin-left:13px;
+}
+.slInstall .slInstallPopupWide
+{
+	margin:0 auto;
+	width:550px;
+	position:relative;
+	text-align:left;
+}
+.slInstall .slPopupTopWide
+{
+	background:url(../img/silverlight/panel_top.png);
+	width:550px;
+	height:219px;
+	position:absolute;
+	top:0;
+}
+.slInstall .slPopupLoopWide
+{
+	background:url(../img/silverlight/panel_loop.png);
+	width:550px;
+	position:absolute;
+	top:219px;
+}
+.slInstall .slPopupBotWide
+{
+	background:url(../img/silverlight/panel_bottom.png);
+	width:550px;
+	height:127px;
+	position:absolute;
+	bottom:0;
+}
+.slInstall .slPopupContentWide
+{
+	position:relative;
+	text-align:left;
+	z-index:100;
+	padding-top:26px;
+	padding-right:20px;
+	padding-bottom:30px;
+}
+.slInstall .slTextContentWide
+{
+	margin-left:187px;
+}
+.slInstall .slHeadlineWide
+{
+	font-weight:bold;
+	font-size:18px;
+	color:#000;
+}
+.slInstall .slButtonWide
+{
+	width:133px;
+	height:25px;
+	font-weight:bold;
+	font-size:11px;
+	background:url(../img/silverlight/button.png);
+	display:block;
+	color:#fff;
+	padding-left:10px;
+	padding-top:9px;
+		text-decoration:none;
+}
+.slInstall a.slButtonWide:hover
+{
+	text-decoration:underline;
+}
+.slInstall .slScreenshotWide
+{
+	position:absolute;
+	left:-34px;
+	top:0;
+	background:url(../img/silverlight/screen_chrome.png);
+	width:196px;
+	height:158px;
+	padding-top:38px;
+	padding-left:31px;
+}

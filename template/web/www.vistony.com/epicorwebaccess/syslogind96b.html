@@ -1,0 +1,314 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="LoginForm" dir="ltr" xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  
+<!-- Mirrored from www.vistony.com/epicorwebaccess/syslogin.aspx?Return=ui.salesorderentry.salesorderform._c_orderentrysistemasweb.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Dec 2015 15:50:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Login</title>
+
+    <link REL="SHORTCUT ICON" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" href="style/styles.css" />
+
+    
+
+    <script type="text/javascript" src="script/settings.js"></script>
+    <script type="text/javascript" src="script/Base.js"></script>
+    <script type="text/javascript" src="script/EpiEvent.js"></script>
+    <script type="text/javascript" src="script/FrameWork.js"></script>
+    <script type="text/javascript" src="script/EpiData.js"></script>
+    <script type="text/javascript" src="script/EpiControls.js"></script>
+    <script type="text/javascript" src="script/global.js"></script>
+    <script type="text/javascript" src="script/Clientlib_LogOnServiceProxies.js"></script>
+
+
+
+<script type="text/javascript">
+var IsSilverlight=false;
+
+var isDemoImage = false;
+var IsChangeUser = getURLArg("isChangeUser");
+var IsDialog = (!getURLArg("return")||getURLArg("isDialog"));
+
+//This is a code only available for Epicor Demo Images
+if (isDemoImage && !IsChangeUser && getCookie(gVantageIDCookie).length > 0 && getCookie(gVantagePwdCookie).length > 0)
+{
+	try{
+   		var lib = new lib_LogOnService();
+		lib.LogIn(getCookie(gVantageIDCookie), getCookie(gVantagePwdCookie));
+
+        var returnParam = getURLArg("return");
+  		if(returnParam)
+      		window.location.href = returnParam.substring(returnParam);
+  		else
+			window.close();
+	}
+	catch(e){}
+}
+
+Global.MessagesStore["application.messages"]={"invalidUserID":"Invalid User ID","invalidPassword":"Invalid Password"};
+
+function Login(userID,password,storeInCookie)
+{
+    if(userID == "")
+    {
+	    var msg = EpiString.GetString("invalidUserID");
+	    Epicor.Mfg.UI.EpiMessageBox.Show(msg,new EpiOverloadedArgs("String"));
+        setFocus("txtUserID");
+        return;
+    }
+
+	try
+	{
+		var lib = new lib_LogOnService();
+		lib.LogIn(userID, password); //Neet to revite the userInfo.  For now set it to ""
+	}
+	catch(e)
+	{
+        Epicor.Mfg.UI.ExceptionBox.Show(e);
+        setFocus("txtPassword");
+        return;	
+	}
+
+	saveCookie(gVantageIDCookie, userID);	
+	
+	saveCookie("LoginReturn", true);
+	
+	if (storeInCookie)
+	{
+		saveCookie(gVantagePwdCookie, password);
+	}
+	else
+	{
+		deleteCookie(gVantagePwdCookie);
+	}		
+	
+	window.returnValue = true;
+
+    var returnParam = getReturnArgFromURL();//getURLArg("return");
+
+    if(returnParam)
+    {
+        url = returnParam.substring(returnParam);
+        var sLogOff = "&logoff=1";
+        var pPar = url.indexOf(sLogOff);
+        if (pPar > 0)
+        {
+            var more = (url.length > pPar + sLogOff.length + 1);
+            url = url.substring(0,pPar);
+            if (more == true)
+            {
+                url = url + "?" + url.substring(pPar + sLogOff.length + 1)
+            }
+        }
+
+        if(url.StartsWith("default.aspx") && getURLArg("skipSL")=="true")
+        {
+            if(url.indexOf("?")>-1)
+                url=url+"&skipSL=true";
+            else 
+                url=url+"?skipSL=true";
+        }
+
+        window.location.href = url;
+    }
+    else
+        window.close();
+}
+
+function Cancel()
+{
+    // Closes the window without logging the user in
+    window.returnValue = false;
+    window.close();
+}
+
+function setFocus(field)
+{
+    if(IsSilverlight)
+        SLLogin.SetFocus(field);
+    else
+        document.getElementById(field).focus();
+}
+
+function Resize()
+{
+    var h = (window.innerHeight) ? window.innerHeight : document.documentElement.clientHeight;
+    var w = (window.innerWidth) ? window.innerWidth : document.documentElement.clientWidth;
+
+    var slpCtrl=document.getElementById("SLP");
+    slpCtrl.style.position="absolute";
+    slpCtrl.style.top="0px";
+    slpCtrl.style.left="0px";
+    slpCtrl.style.height=h+"px";
+    slpCtrl.style.width=w+"px";
+}
+
+function getReturnArgFromURL()
+{
+    var val = false;
+    var urlArgStr = window.location.search;
+    if(urlArgStr.substr(0,1)=="?")
+    {
+        urlArgStr = urlArgStr.substr(1);
+    }
+    //Return=ui.contextaction.aspx?call=PMGO2001&type=BaseForm&field=POHeader.PONum&value=1&CompanyID=EPIC03
+    var equalIdx = urlArgStr.indexOf("=");
+    if(equalIdx>-1)
+    {
+        val = urlArgStr.substr(equalIdx+1);
+        return val;
+    }
+
+    return val;
+}
+
+function getURLArg(argName)
+{
+    var urlArgStr;
+    var paramArray;
+    var param;
+    var val = false;
+	
+    urlArgStr = window.location.search;
+    if(urlArgStr.substr(0,1)=="?")
+    {
+        urlArgStr = urlArgStr.substr(1);
+    }
+
+    var argsArray = urlArgStr.split("&");
+    for(ii=0; ii<argsArray.length; ii++)
+    {
+        var equalIdx = argsArray[ii].indexOf("=");
+        if(equalIdx>-1)
+        {
+            var leftSide=argsArray[ii].substr(0,equalIdx);
+            if(leftSide.toLowerCase()==argName.toLowerCase())
+            {
+                val = argsArray[ii].substr(equalIdx+1);
+                break;
+            }
+        }
+        else
+        {
+            if(argsArray[ii].toLowerCase()==argName.toLowerCase())
+            {
+                val=true;
+                break;
+            }
+        }
+    }    	
+    return val;
+}
+
+
+// NON-SILVERLIGHT CODE
+
+    setDefaultStyle("");
+    
+    var gIsSaveUserIDPWDinCookie = false;
+
+    function btnLogin_onclick()
+    {
+        // calls the login function on SysSecurity and closes the form
+        var userID = document.getElementById("txtUserID").value;
+	    var password = document.getElementById("txtPassword").value;
+        var storeInCookie = document.getElementById("chkStoreInCookie").checked
+
+        Login(userID, password, storeInCookie);
+    }
+
+    function btnCancel_onclick(ctrl)
+    {
+        Cancel();
+    }
+    function doLoad()
+    {
+        saveCookie("LoginReturn", false);
+        document.getElementById('txtUserID').value = getCookie(gVantageIDCookie);
+    
+        EpiEventManager.addListener(document.getElementById("btnLogin"), "click", btnLogin_onclick, window, true);
+        EpiEventManager.addListener(document.getElementById("btnCancel"), "click", btnCancel_onclick, window, true);
+        EpiEventManager.addListener(document.getElementById("BodyID"), "keypress", doKeyPress, window, true);
+        // In Safari, typing in inputs on modal dialogs shows characters doubled up. Need to handle document.onkeydown and return false for all alphanumeric characters.
+        if(BrowserSniffer.Safari13 && IsDialog)
+            EpiEventManager.addListener(document, "keydown", _doKeydown, window, true);
+
+        document.getElementById("txtUserID").focus();
+
+        if (!isDemoImage)
+	        document.getElementById("chkRememberMe").style.display = "none";
+
+        var loggedOff = getURLArg("logoff");
+        if (loggedOff=="1") window.status = "logged off successfully";
+    }
+
+    function _doKeydown(e)
+    {
+        var key; 
+        if (e.keyCode) key = e.keyCode; 
+        else if (e.which) key = e.which; 
+ 
+        if (/[A-Za-z0-9 ]/.test(String.fromCharCode(key))) 
+        { 
+               EpiEventManager.stopEvent(e);
+               return false; 
+        } 
+        return true;
+    }
+    function doKeyPress(e)
+    {
+        var ev = BrowserHelper.GetEvent(e);
+
+        //fire login event if "Enter" key is pressed
+        if (ev.keyCode == 13)
+        {
+            btnLogin_onclick();	
+        }		
+        if (ev.keyCode == 27)
+        {
+            window.close();
+        }		
+    }
+
+
+
+
+</script>
+
+</head>
+
+<body id="BodyID" onload="doLoad();">
+
+
+    <div>
+    <table style="margin-left:10px; margin-right:10px; margin-top: 20px;">
+        <tr>
+            <td><label class="EpiLabel" id="txtUserIDLbl" style="float:right;">User ID:</label></td>
+            <td><input type="text" class="EpiTextBox" id="txtUserID" /></td>
+        </tr>
+        <tr>
+            <td><label class="EpiLabel" id="txtPasswordLbl" style="float:right;">Password:</label></td>
+            <td><input type="password" class="EpiTextBox" id="txtPassword" /></td>
+        </tr>
+	    <tr class="sectionBody" id="chkRememberMe">
+		    <td />
+		    <td>
+		        <input type="checkbox" class="checkbox" xTooltip="chkStoreInCookie" id="chkStoreInCookie" datafld="" xDataType="string" style=""/>
+			    <label class="EpiLabel" id="chkStoreInCookieLbl" xTooltip="chkIsStoreInCookie">Remember Me</LABEL>
+		    </td>
+	    </tr>
+    </table>
+
+    <div style="margin-left:10px; margin-top:10px;">
+        <button type="button" id="btnLogin" style="width:60px;">Login</button> 
+        <button type="button" id="btnCancel" style="margin-left:5px;">Cancel</button>
+    </div>
+    </div>
+
+</body>
+
+<!-- Mirrored from www.vistony.com/epicorwebaccess/syslogin.aspx?Return=ui.salesorderentry.salesorderform._c_orderentrysistemasweb.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Dec 2015 15:50:51 GMT -->
+</html>

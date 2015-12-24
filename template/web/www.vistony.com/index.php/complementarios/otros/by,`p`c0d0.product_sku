@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<?xml-stylesheet href="/components/com_virtuemart/assets/css/ui/jquery.ui.all.css?vmver=8847" type="text/css"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Vistony - OTROS</title>
+		<description><![CDATA[Vistony SAC es una empresa con más de 20 años de experiencia especializada en la Fabricación, Comercialización y Distribución de Lubricantes y Grasas de la marca VISTONY enfocada en los segmentos del Sector Industrial, Automotriz y Minero.]]></description>
+		<link>http://www.vistony.com</link>
+		<lastBuildDate>Thu, 24 Dec 2015 17:03:36 +0000</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="http://www.vistony.com/index.php/complementarios/otros/by,`p`.product_sku?format=feed&amp;type=rss"/>
+		<language>es-es</language>
+		<item>
+			<title>LIMPIA CONTACTO</title>
+			<link>http://www.vistony.com/index.php/complementarios/otros/limpia-contacto-detail</link>
+			<guid isPermaLink="true">http://www.vistony.com/index.php/complementarios/otros/limpia-contacto-detail</guid>
+			<description><![CDATA[<div class="feed-description"><img src="http://www.vistony.com/images/stories/virtuemart/product/resized/limpia_contacto_10oz_280x280.png" alt="limpia_contacto_10oz" style="margin-right: 10px; margin-bottom: 10px; float: left;" /><span class="price-crossed" ><div class="PricebasePriceWithTax vm-display vm-price-value"><span class="vm-price-desc"></span><span class="PricebasePriceWithTax">$1.32</span></div></span><div class="PricesalesPrice vm-display vm-price-value"><span class="vm-price-desc"></span><span class="PricesalesPrice">$1.32</span></div><div class="PricediscountAmount vm-nodisplay"><span class="vm-price-desc"></span><span class="PricediscountAmount"></span></div><div class="PricetaxAmount vm-display vm-price-value"><span class="vm-price-desc"></span><span class="PricetaxAmount">$0.23</span></div><p class="feed-readmore"><a target="_blank" href ="/index.php/complementarios/otros/limpia-contacto-detail">Leer más</a></p></div>]]></description>
+			<category>54</category>
+			<pubDate>Wed, 13 May 2015 16:26:30 +0000</pubDate>
+		</item>
+		<item>
+			<title>AFLOJATODO ZK90</title>
+			<link>http://www.vistony.com/index.php/complementarios/otros/aflojatodo-zk90-detail</link>
+			<guid isPermaLink="true">http://www.vistony.com/index.php/complementarios/otros/aflojatodo-zk90-detail</guid>
+			<description><![CDATA[<div class="feed-description"><img src="http://www.vistony.com/images/stories/virtuemart/product/resized/aflojatodo_10oz_280x280.png" alt="aflojatodo_10oz" style="margin-right: 10px; margin-bottom: 10px; float: left;" /><span class="price-crossed" ><div class="PricebasePriceWithTax vm-display vm-price-value"><span class="vm-price-desc"></span><span class="PricebasePriceWithTax">$1.32</span></div></span><div class="PricesalesPrice vm-display vm-price-value"><span class="vm-price-desc"></span><span class="PricesalesPrice">$1.32</span></div><div class="PricediscountAmount vm-nodisplay"><span class="vm-price-desc"></span><span class="PricediscountAmount"></span></div><div class="PricetaxAmount vm-display vm-price-value"><span class="vm-price-desc"></span><span class="PricetaxAmount">$0.23</span></div><p class="feed-readmore"><a target="_blank" href ="/index.php/complementarios/otros/aflojatodo-zk90-detail">Leer más</a></p></div>]]></description>
+			<category>54</category>
+			<pubDate>Wed, 13 May 2015 16:26:30 +0000</pubDate>
+		</item>
+		<item>
+			<title>LIMPIA CARBURADOR</title>
+			<link>http://www.vistony.com/index.php/complementarios/otros/limpia-carburador-detail</link>
+			<guid isPermaLink="true">http://www.vistony.com/index.php/complementarios/otros/limpia-carburador-detail</guid>
+			<description><![CDATA[<div class="feed-description"><img src="http://www.vistony.com/images/stories/virtuemart/product/resized/limpia_carburador_10oz_280x280.png" alt="limpia_carburador_10oz" style="margin-right: 10px; margin-bottom: 10px; float: left;" /><span class="price-crossed" ><div class="PricebasePriceWithTax vm-display vm-price-value"><span class="vm-price-desc"></span><span class="PricebasePriceWithTax">$1.32</span></div></span><div class="PricesalesPrice vm-display vm-price-value"><span class="vm-price-desc"></span><span class="PricesalesPrice">$1.32</span></div><div class="PricediscountAmount vm-nodisplay"><span class="vm-price-desc"></span><span class="PricediscountAmount"></span></div><div class="PricetaxAmount vm-display vm-price-value"><span class="vm-price-desc"></span><span class="PricetaxAmount">$0.23</span></div><p class="feed-readmore"><a target="_blank" href ="/index.php/complementarios/otros/limpia-carburador-detail">Leer más</a></p></div>]]></description>
+			<category>54</category>
+			<pubDate>Wed, 13 May 2015 16:26:30 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

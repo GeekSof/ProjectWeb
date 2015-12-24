@@ -1,0 +1,7 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.vistony.com	TRUE	/	FALSE	1999999999	9a59681c5f0b30b3525d0dffd1089a93	pfkrakp6m8urn689gevvnnmuj5
+www.vistony.com	TRUE	/	FALSE	1999999999	5cf9520ae11e3433a5d014e6180b90f5	es-ES
+www.vistony.com	TRUE	/	FALSE	1999999999	ASP.NET_SessionId	thnfwm5513nhwy45gmjpsy45
+.google.com	TRUE	/	FALSE	1999999999	NID	74=DqFcvS9Q7PJgEaUfepntw69q3snV2RMyM4WhHaRa751KZs_MRwQNof7KcqjBfq1BkWCcBC0Eameyx80R9GpMr9196Vhd_u1N0I7WxIGT8g_UHx6_jqr-qxLYtGVFDVX8
+

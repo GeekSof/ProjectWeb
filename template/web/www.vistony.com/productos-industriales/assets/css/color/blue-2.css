@@ -1,0 +1,70 @@
+/*
+  Desarrollado por: JobalCorp - Sistemas y Marketing Digital
+  Version 1.0.1
+*/
+
+/*========================================
+find and replace below color to change style
+
+#22a8ff = main color
+#2b8ac8 = btn hover and focus
+#000 = overlay color
+#2e0a0a = gradient color 1
+#143b20 = gradient color 2
+#fcfcf8 = about section background color
+#fcfcf8 = contact section background color
+#151515 = footer background color
+========================================*/
+
+.main-color {
+  color: #22a8ff; /* color principal */
+}
+
+.btn-1 { /* btn-1 basic on main-color class */
+  background-color: #22a8ff;
+  border-color: #22a8ff;
+}
+
+.btn-1.focus
+.btn-1:focus,
+.btn-1:hover { /* btn-1 hover and focus */
+  background-color: #a1f500;
+  border-color: #2b8ac8;
+}
+
+address .icon {
+  background-color: #3360c7; /* contact icon background color */
+}
+
+
+.overlays.overlay{
+background-color: rgba(0, 0, 0, 0.6); /* overlay color */
+
+
+  
+
+    
+}
+
+.overlays.gradient {
+  background: #2e0a0a;/* Old Browsers */
+  background: -moz-linear-gradient(-45deg, #2e0a0a 0%, #2e0a0a 30%, #143b20 75%, #143b20 100%); /* FF3.6+ */
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #2e0a0a), color-stop(30%, #2e0a0a), color-stop(75%, #143b20), color-stop(100%, #143b20));/* Chrome, Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #2e0a0a 0%, #2e0a0a 30%, #143b20 75%, #143b20 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, #2e0a0a 0%, #2e0a0a 30%, #143b20 75%, #143b20 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #2e0a0a 0%, #2e0a0a 30%, #143b20 75%, #143b20 100%); /* IE 10+ */
+  background: linear-gradient(135deg, #2e0a0a 0%, #2e0a0a 30%, #143b20 75%, #143b20 100%);/* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e0a0a', endColorstr='#143b20', GradientType=1 );/* IE6-9 fallback on horizontal gradient */
+}
+
+#feature {
+  background-color: #fcfcf8; /* Sobre N seccion background color */
+}
+
+#contact {
+  background-color: #fcfcf8; /* contacto seccion background color */
+}
+
+#site-footer {
+  background-color: #151515; /* footer background color */
+}

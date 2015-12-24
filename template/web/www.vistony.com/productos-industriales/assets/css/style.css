@@ -1,0 +1,868 @@
+/*
+  Desarrollado por: JobalCorp - Sistemas y Marketing Digital
+  Version: 1.0.1
+*/
+
+/*========================================
+01. import css
+02. bootstrap reset
+03. browser reset
+04. fix ie10 viewport bug
+05. basic
+06. typography
+07. button
+08. form
+09. preloader
+10. navbar icon
+11. overlay
+12. section general
+13. intro
+14. feature
+15. subscribe
+16. contact
+17. footer
+========================================*/
+
+/*========================================
+01. import css
+========================================*/
+
+@charset "UTF-8";
+
+/* google font */
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800");
+@import url("http://fonts.googleapis.com/css?family=Khand:300,400,500,600,700");
+/* /google font */
+
+@import url("font-cordianew.css"); /* font cordia */
+@import url("font-awesome.min.css"); /* font awesome */
+@import url("ionicons.min.css"); /* ion icons */
+@import url("animate.css"); /* animate */
+@import url("simpletextrotator.css"); /* simple text rotator */
+
+/*========================================
+02. bootstrap reset
+========================================*/
+
+a:focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  outline: 0;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+a:focus, a:hover {
+  color: #272727;
+  text-decoration: none;
+}
+
+.btn.active, .btn:active,
+.form-control,
+.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn,
+.form-control {
+  border-radius: 0;
+}
+
+/*========================================
+03. browser reset
+========================================*/
+
+button:focus {
+  outline: 0;
+}
+
+/*========================================
+04. fix ie10 viewport bug
+========================================*/
+
+@-webkit-viewport   {width: device-width;}
+@-moz-viewport      {width: device-width;}
+@-ms-viewport       {width: device-width;}
+@-o-viewport        {width: device-width;}
+@viewport           {width: device-width;}
+
+/*========================================
+05. basic
+========================================*/
+
+html, body {
+  height: 100%;
+  background-color: transparent;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16px;
+  color: #676767; /* basic font color */
+}
+
+img { /* img-responsive */
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  color: #272727; /* link color */
+}
+
+.icon {
+  display: inline-block;
+}
+
+.main-color {
+  color: #cd7979; /* main color */
+}
+
+.visible {
+  visibility: visible!important;
+}
+
+.animated {
+  visibility: hidden;
+}
+
+.ie8 .animated,
+.ie9 .animated,
+.is-mobile.no-animation .animated {
+  visibility: visible!important;
+}
+
+/*========================================
+06. typography
+========================================*/
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  line-height: 1.2;
+  color: #445055;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+/*========================================
+07. button
+========================================*/
+
+.btn {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #fff;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.btn.focus,
+.btn:focus,
+.btn:hover {
+  color: #fff;
+}
+
+.btn-50 { /* btn 50px height class */
+  height: 50px;
+  line-height: 1;
+  padding: 18px 20px;
+}
+
+.btn-1 { /* btn-1 basic on main-color class */
+  background-color: #cd7979;
+  border-color: #cd7979;
+}
+
+.btn-1.focus
+.btn-1:focus,
+.btn-1:hover {
+  background-color: #ba7272;
+  border-color: #ba7272;
+}
+
+/*========================================
+08. form
+========================================*/
+
+/* form 50px height class */
+
+.form-50 input {
+  height: 50px;
+  padding: 13px 20px;
+}
+
+.form-50 textarea {
+  padding: 13.5px 20px;
+}
+
+/* /form 50px height class */
+
+.form-control {
+  font-family: "Khand", Arial, sans-serif;
+}
+
+.form-notice {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  line-height: 50px;
+  text-align: center;
+  display: none;
+}
+
+/*========================================
+09. preloader
+========================================*/
+
+#preloader {
+  background: #000; /* preloader background color */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 9999;
+}
+
+#preloader-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: url(../img/preloader.gif) no-repeat 50% 50%; /* preloader image */
+  width: 60px; /* preloader image width */
+  height: 60px; /* preloader image height */
+  margin-top: -30px; /* half of preloader image height */
+  margin-left: -30px; /* half of preloader image width */
+}
+
+/*========================================
+10. navbar icon
+========================================*/
+
+#site-header {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 1100;
+  background-color: #222;
+}
+
+.gg-navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;  
+}
+
+.gg-navbar li {
+  float: left;
+}
+
+.gg-navbar .icon {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+#play,
+#volume {
+  display: none;
+}
+
+.youtube-video-desktop #play,
+.youtube-video-desktop #volume {
+  display: block;
+}
+
+.audio-on #play {
+  display: block;
+}
+
+.ie8 #audio-player {
+  display: none;
+}
+
+#play {
+  background-color: #444; /* play button background color */
+}
+
+#volume {
+  background-color: #333; /* volume button background color */
+}
+
+/*========================================
+11. overlay
+========================================*/
+
+.overlays {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.overlays.overlay{
+  background-color: #000;
+}
+
+.overlays.gradient {
+  background: #0a1030;/* Old Browsers */
+  background: -moz-linear-gradient(-45deg, #0a1030 0%, #0a1030 30%, #3c1420 75%, #3c1420 100%); /* FF3.6+ */
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #0a1030), color-stop(30%, #0a1030), color-stop(75%, #3c1420), color-stop(100%, #3c1420));/* Chrome, Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #0a1030 0%, #0a1030 30%, #3c1420 75%, #3c1420 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, #0a1030 0%, #0a1030 30%, #3c1420 75%, #3c1420 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #0a1030 0%, #0a1030 30%, #3c1420 75%, #3c1420 100%); /* IE 10+ */
+  background: linear-gradient(135deg, #0a1030 0%, #0a1030 30%, #3c1420 75%, #3c1420 100%);/* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a1030', endColorstr='#3c1420', GradientType=1 );/* IE6-9 fallback on horizontal gradient */
+}
+
+/*========================================
+12. section general
+========================================*/
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.section-title {
+  font-size: 28px;
+  text-shadow: rgba(0, 0, 0, 0.1) 4px 4px 4px;
+}
+
+.section-subtitle {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+}
+
+.separator {
+  line-height: 1px;
+  margin: 30px auto;
+}
+
+.separator-inner {
+  display: inline-block;
+  position: relative;
+  width: 120px;
+  height: 11px;
+}
+
+.separator span {
+  background-color: #272727; /* separator background color */
+}
+
+.separator.light span {
+  background-color: #fff; /* separator light background color */
+}
+
+.separator .middle {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+}
+
+.separator .top,
+.separator .bottom {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 50%;
+  height: 1px;
+  margin: 0 auto;
+}
+
+.separator .top {
+  top: 0px;
+}
+
+.separator .middle {
+  top: 5px;
+}
+
+.separator .bottom {
+  top: 10px;
+}
+
+
+/*========================================
+13. intro
+========================================*/
+
+#intro {
+  position: relative;
+}
+
+#intro-wrapper {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+#intro-inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.logo {
+  height: 80px; /* logo image height */
+  margin: 0 auto 25px;
+}
+
+#intro-heading h1 {
+  font-size: 80px;
+  letter-spacing: 0;
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, 0.1) 4px 4px 4px;
+}
+
+#intro-heading p {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.4em;
+  margin-top: 40px;
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, 0.1) 4px 4px 4px;
+}
+
+@media (max-width:991px) { /* extra small devices - small devices */
+
+  #intro-wrapper {
+    text-align: center;
+  }
+
+}
+
+@media (min-width:768px) and (max-width:991px) { /* small devices */
+
+  #intro-heading h1 {
+    font-size: 46px;
+  }
+
+}
+
+@media (max-width:767px) { /* extra small devices */
+
+  #intro-heading h1 {
+    font-size: 36px;
+  }
+
+  #intro-heading .separator {
+    margin: 30px auto 0;
+  }
+
+}
+
+/*========================================
+module
+========================================*/
+
+#intro-module {
+  margin-top: 10px;
+}
+
+.module {
+  display: none;
+}
+
+/* text rotate */
+
+.text-rotate-class #text-rotate-module {
+  display: block;
+}
+
+#text-rotate-module .rotate {
+  font-family: "Khand", Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+@media (max-width:767px) { /* extra small devices */
+
+  #text-rotate-module .rotate {
+    font-size: 20px;
+  }
+
+}
+
+/* countdown */
+
+.countdown-class #countdown-module {
+  display: block;
+}
+
+#countdown {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 608px;
+}
+
+.time-wrap {
+  padding: 0;
+}
+
+.time {
+  font-family: arial;
+  font-size: 94px; /* countdown time font size */
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  color: #fff; /* countdown unit font color */
+  text-shadow: rgba(0, 0, 0, 0.1) 4px 4px 4px;
+}
+
+.unit {
+ font-family: arial;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top:11px;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  color: #fff; /* countdown unit font color */
+  text-shadow: rgba(0, 0, 0, 0.1) 4px 4px 4px;
+}
+
+@media (max-width:767px) { /* extra small devices */
+
+.circulo{ 
+    background-position: 50% 50%;
+  	}
+  #countdown {
+    max-width: 400px;
+  }
+
+  .time-wrap {
+    margin-top: 20px;
+    padding: 50px;
+  }
+
+  .time {
+    font-size: 28px;
+  }
+
+.unit {
+    font-size: 12px;
+  }
+
+}
+
+/*========================================
+14. feature
+========================================*/
+
+#feature {
+  padding: 140px 0;
+  background-color: #fcfcf8; /* feature section background color */
+}
+
+.feature-col {
+  text-align: center;
+}
+
+.feature-col img {
+  width: 200px; /* feature image width */
+  border-radius: 50%;
+  margin: 0 auto 40px;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.35);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.35);
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.35);
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.feature-col h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-shadow: rgba(0, 0, 0, 0.1) 4px 4px 4px;
+}
+
+.feature-col h3:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 1px;
+  margin: 20px auto;
+  background: #272727;
+}
+
+.feature-col p {
+  text-align: left;
+  padding: 0 20px;
+}
+
+@media (max-width:991px) { /* extra small devices - small devices */
+
+  .feature-col {
+    margin-top: 80px
+  }
+
+  .feature-col:first-child {
+    margin-top: 0;
+  }
+
+}
+
+/*========================================
+15. subscribe
+========================================*/
+
+#subscribe {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  position: relative;
+  background-color: transparent;
+  background-image: url(../img/bg/subscribe.html);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  padding: 120px 0;
+  z-index: 10;
+}
+
+#subscribe .section-heading {
+  margin-bottom: 30px;
+}
+
+#subscribe .section-title,
+#subscribe .section-subtitle {
+  color: #fff;
+}
+
+#subscribe-form {
+  position: relative;
+  max-width: 450px; /* subscribe form max width */
+  margin: 0 auto;
+}
+
+#subscribe-form .form-group {
+  margin-bottom: 0;
+}
+
+#subscribe-form .form-control {
+  width: 100%;
+  border-right: 0;
+  background-color: #fff;
+}
+
+#subscribe-form .form-control:focus {
+  border-color: #fff;
+}
+
+#subscribe-form button[type=submit] {
+  position: relative;
+  margin-left: 0;
+}
+
+.subscribe-notice {  
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
+  visibility: hidden;
+  color: #fff;
+}
+
+/*========================================
+16. contact
+========================================*/
+
+#contact {
+  background-color: #fcfcf8; /* contact section background color */
+  padding: 140px 0;
+}
+
+.address-wrapper {
+  display: inline-block;
+}
+
+address {
+  margin-bottom: 20px;
+}
+
+address .icon {
+  font-size: 20px;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 15px;
+  text-shadow: rgba(0, 0, 0, 0.1) 4px 4px 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 2px;
+}
+
+address span {
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+}
+
+#contact-form .form-group {
+  margin-bottom: 30px;
+}
+
+#contact-form .form-control {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-width: 0 0 1px;
+}
+
+#contact-form textarea {
+  resize: none;
+}
+
+#contact-form button[type=submit] {
+  position: relative;
+}
+
+.contact-notice {
+  height: 50px;
+  line-height: 50px;
+}
+
+.valid .icon,
+.icon.valid {
+  color: #2be8cc; /* form valid icon color */
+}
+
+.error .icon,
+.icon.error {
+  color: #ff5e5f; /* form error icon color */
+}
+
+.valid-bg {
+  background-color: #2be8cc; /* form valid background color */
+}
+
+.error-bg {
+  background-color: #ff5e5f; /* form error background color */
+}
+
+/*========================================
+17. footer
+========================================*/
+
+#site-footer {
+  padding: 120px 0 110px;
+  background-color: #151515; /* footer background color */
+  text-align: center;
+}
+
+.footer-logo {
+  height: 70px; /* footer logo image height */
+  margin: 0 auto 20px;
+}
+
+.social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.social-list li {
+  display: inline-block;
+  padding: 10px 5px;
+}
+
+.social-list a {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  border-radius: 50%;
+  color: #212c32;
+  background-color: #a2a7a9;
+  text-shadow: rgba(0, 0, 0, 0.1) 4px 4px 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 2px;
+}
+
+.social-list a:hover {
+  background-color: #fff;
+}
+
+.copyright {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  text-align: center;
+  margin: 30px auto 0
+}
+
+.copyright,
+.copyright a {
+  color: #a2a7a9;
+}
+
+.copyright a:hover {
+  color: #dde5e8;
+}
